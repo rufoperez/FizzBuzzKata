@@ -13,5 +13,13 @@ namespace FizzBuzzKataTest
 
             Assert.AreEqual("1", result);
         }
+
+        [TestMethod]
+        public void when_number_is_2_then_return_2()
+        {
+            string result = FizzBuzzPrinter.Print();
+
+            Assert.AreEqual("2", result);
+        }
     }
 }
