@@ -10,7 +10,7 @@ namespace FizzBuzzKata
     {
         public static string Print()
         {
-            return string.Empty;
+            return "1";
         }
     }
 }
