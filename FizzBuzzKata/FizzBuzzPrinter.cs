@@ -1,37 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FizzBuzzKata
+﻿namespace FizzBuzzKata
 {
     public class FizzBuzzPrinter
     {
-        public static string Print(int topNumber)
+        public static string Print(int number)
         {
-            string result = string.Empty;
+            if (number == 3)
+                return "fizz";
 
-            for (int i = 1; i <= topNumber; i++)
-            {
-                if (i % 3 == 0)
-                {
-                    result += $"fizz";
-                }
-                else
-                {
-                    result += $"{i}";
-                }
-                
-                if (i < topNumber)
-                {
-                    result += " ";
-                }
-            }
-
-
-            return result;
+            return number.ToString();
         }
     }
 }
