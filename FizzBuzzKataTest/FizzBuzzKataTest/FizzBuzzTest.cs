@@ -29,5 +29,13 @@ namespace FizzBuzzKataTest
 
             Assert.AreEqual("1 2 fizz", result);
         }
+
+        [TestMethod]
+        public void when_topnumber_is_4_then_return_1_2_fizz_4()
+        {
+            string result = FizzBuzzPrinter.Print(4);
+
+            Assert.AreEqual("1 2 fizz 4", result);
+        }
     }
 }
