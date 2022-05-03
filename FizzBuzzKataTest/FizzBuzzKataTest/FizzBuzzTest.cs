@@ -7,19 +7,19 @@ namespace FizzBuzzKataTest
     public class FizzBuzzTest
     {
         [TestMethod]
-        public void when_number_is_1_then_return_1()
+        public void when_topnumber_is_1_then_return_1()
         {
-            string result = FizzBuzzPrinter.Print();
+            string result = FizzBuzzPrinter.Print(1);
 
             Assert.AreEqual("1", result);
         }
 
         [TestMethod]
-        public void when_number_is_2_then_return_2()
+        public void when_topnumber_is_1_and_2_then_return_1_2()
         {
-            string result = FizzBuzzPrinter.Print();
+            string result = FizzBuzzPrinter.Print(2);
 
-            Assert.AreEqual("2", result);
+            Assert.AreEqual("1 2", result);
         }
     }
 }
