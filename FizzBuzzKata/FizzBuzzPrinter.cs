@@ -15,7 +15,15 @@ namespace FizzBuzzKata
 
             for (int i = 1; i <= topNumber; i++)
             {
-                result += $"{i}";
+                if (i % 3 == 0)
+                {
+                    result += $"fizz";
+                }
+                else
+                {
+                    result += $"{i}";
+                }
+                
                 if (i < topNumber)
                 {
                     result += " ";
