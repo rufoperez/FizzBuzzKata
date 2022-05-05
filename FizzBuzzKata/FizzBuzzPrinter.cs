@@ -4,10 +4,7 @@
     {
         public static string Print(int number)
         {
-            if (number == 15)
-                return "fizz buzz";
-
-            if (number == 30)
+            if (number % 3 == 0 && number % 5 == 0)
                 return "fizz buzz";
 
             if (number % 3 == 0)
