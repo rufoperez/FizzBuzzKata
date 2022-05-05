@@ -4,13 +4,7 @@
     {
         public static string Print(int number)
         {
-            if (number == 3)
-                return "fizz";
-
-            if (number == 6)
-                return "fizz";
-
-            if (number == 9)
+            if (number % 3 == 0)
                 return "fizz";
 
             if (number == 5)
