@@ -93,5 +93,13 @@ namespace FizzBuzzKataTest
 
             Assert.AreEqual("fizz buzz", result);
         }
+
+        [TestMethod]
+        public void when_number_is_30_then_return_fizz_buff()
+        {
+            string result = FizzBuzzPrinter.Print(30);
+
+            Assert.AreEqual("fizz buzz", result);
+        }
     }
 }
