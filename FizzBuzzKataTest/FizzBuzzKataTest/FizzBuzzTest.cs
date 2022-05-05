@@ -53,5 +53,13 @@ namespace FizzBuzzKataTest
 
             Assert.AreEqual("fizz", result);
         }
+
+        [TestMethod]
+        public void when_number_is_7_then_return_7()
+        {
+            string result = FizzBuzzPrinter.Print(7);
+
+            Assert.AreEqual("7", result);
+        }
     }
 }
